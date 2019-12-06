@@ -1,0 +1,75 @@
+﻿@model Applicant_JOB_APP.Models.Applicant
+
+@{
+    ViewBag.Title = "Delete";
+}
+<br /><br /><br />
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+<div class="row">
+    <div class="col-md-12">
+
+
+        <div class="jumbotron">
+            <h4 style="text-align:center;color:orangered;font-size:20px;">Delete Applicant</h4>
+            <hr />
+            <dl class="dl-horizontal">
+
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BirthDate):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BirthDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.MobileNo):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MobileNo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.EMail):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EMail)
+                </dd>
+
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Gender.Name):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Gender.Name)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    <input type="submit" value="Delete" class="btn btn-default" style="margin-left:100px;text-align:center;font-size:20px;" /> |
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            }
+        </div>
+
+    </div>
+</div>

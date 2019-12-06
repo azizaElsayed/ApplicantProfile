@@ -1,0 +1,86 @@
+﻿@model Applicant_JOB_APP.Models.Applicant
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+<style>
+    .details {
+        margin-top: 10px;
+        margin-left: 100px;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        border: 1px solid #dde;
+        font-size: 20px;
+        width: 300px;
+        height: 70px;
+    }
+
+    .jumbotron{
+      
+
+    }
+</style>
+
+
+<br /><br /><br />
+        <div class="jumbotron">
+    <div class="row">
+        <div class="col-md-12 col-4">
+            <h4 style="text-align:center;color:orangered;font-size:20px;">Details Applicant</h4>
+            
+            <dl class="dl-horizontal">
+
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.BirthDate):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.BirthDate)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.MobileNo):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MobileNo)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.EMail):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.EMail)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Gender.Name):
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Gender.Name)
+                </dd>
+
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "details" }) |
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
+            </dl>
+        </div>
+
+    </div>
+</div>

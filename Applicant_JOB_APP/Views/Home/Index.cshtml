@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+
+}
+
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+
+<br /><br /><br />
+
+
+
+<div class="jumbotron" id="mydiv">
+
+    @*@Html.Partial("Apply")*@
+
+    <a href="~/Applicants/Create">
+        <img src="~/Content/image/download (1).jpg" />
+
+    </a>
+
+    <a href="~/ApplicantQualifications/Create">
+        <img src="~/Content/image/download (3).png" />
+
+    </a>
+    <a href="~/CertificationSpecifics/Create">
+        <img src="~/Content/image/download (4).png" />
+    </a>
+    <a href="~/ApplicantApplicationsFields/Create">
+        <img src="~/Content/image/images (2).jpg" />
+    </a>
+
+    <div class="row">
+        <div class="col-md-12">
+
+
+            <a href="~/Applicants/Create" id="data">
+                <span>Personal Data  
+                <i id="show" style="display:none">show</i>
+                </span>
+            </a>
+
+            <a href="~/ApplicantQualifications/Create" id="data">
+                <span>Qualification Data</span>
+            </a>
+            <a href="~/CertificationSpecifics/Create" id="data">
+                <span>Certification  Data</span>
+            </a>
+            <a href="~/ApplicantApplicationsFields/Create" id="data">
+                <span>Work fields</span>
+            </a>
+
+        </div>
+    </div>
+</div>
+
+
+   

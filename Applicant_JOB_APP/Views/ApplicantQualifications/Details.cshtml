@@ -1,0 +1,50 @@
+﻿@model Applicant_JOB_APP.Models.ApplicantQualification
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<br /><br /><br />
+
+<div class="jumbotron">
+    <h4 style="text-align:center;font-size:20px;color:orangered">Details ApplicantQualification</h4>
+    <hr  style="color:black"/>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Applicant.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Applicant.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CertificationSpecific.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CertificationSpecific.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CertificationType.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CertificationType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

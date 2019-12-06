@@ -1,0 +1,58 @@
+﻿@model Applicant_JOB_APP.Models.ApplicantQualification
+
+@{
+    ViewBag.Title = "ProfileApplicant";
+}
+
+<h2>ProfileApplicant</h2>
+
+<div>
+    <h4>ApplicantQualification</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Applicant.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Applicant.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CertificationSpecific.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CertificationSpecific.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CertificationType.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CertificationType.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
